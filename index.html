@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Lunch</title>
+  <meta name="description" content="Campus lunch menu for students">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="site-subtitle">CAMPUS LUNCH &middot; SAMPLE MENU</div>
+      <h1>What's for lunch?</h1>
+      <p class="header-description" id="header-description">Monday's menu, all in one place.</p>
+    </header>
+    
+    <div class="filter-section">
+      <div class="day-selector-container">
+        <label for="day-select">Day</label>
+        <div class="select-wrapper">
+          <select id="day-select">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <div class="summary-section">
+      <span id="meal-summary" class="meal-summary">Monday &middot; 3 meals</span>
+    </div>
+    
+    <main>
+      <div id="menu-container" class="menu-container">
+        <!-- Meal cards will be inserted here by JavaScript -->
+      </div>
+    </main>
+
+    <footer>
+      <p>Classroom sample data. This page does not place orders.</p>
+    </footer>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
